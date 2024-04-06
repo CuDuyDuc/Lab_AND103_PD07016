@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?><!-- dialog_update_car.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+    <TextView
+        android:id="@+id/tvTenSP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Distributor"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-black"
+        android:background="@drawable/custom_addtv_form_topleft_topright"
+        android:textAllCaps="true"
+        android:padding="8dp"
+        android:textColor="@color/dark_blue"
+        android:textSize="30sp"
+        android:layout_marginBottom="35dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Distributor"
+        android:textColor="@color/black"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/custtomedit"
+        android:hint="name distributor"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Submit"
+        android:textColor="@color/white"
+        android:padding="10dp"
+        android:background="@drawable/resource_background_button"/>
+
+</LinearLayout>
