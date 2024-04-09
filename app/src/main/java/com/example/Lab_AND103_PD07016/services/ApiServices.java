@@ -2,6 +2,7 @@ package com.example.Lab_AND103_PD07016.services;
 
 import com.example.Lab_AND103_PD07016.model.Distributor;
 import com.example.Lab_AND103_PD07016.model.Fruit;
+import com.example.Lab_AND103_PD07016.model.Order;
 import com.example.Lab_AND103_PD07016.model.Page;
 import com.example.Lab_AND103_PD07016.model.Response;
 import com.example.Lab_AND103_PD07016.model.User;
@@ -26,7 +27,7 @@ import retrofit2.http.Query;
 import retrofit2.http.QueryMap;
 
 public interface ApiServices {
-    public static String BASE_URL = "http://172.16.49.10:3000/api/";
+    public static String BASE_URL = "http://172.16.50.102:3000/api/";
 
     @GET("get-list-distributor")
     Call<Response<ArrayList<Distributor>>> getListDistributor();
@@ -84,6 +85,8 @@ public interface ApiServices {
 
     @GET("get-fruit-by-id/{id}")
     Call<Response<Fruit>> getFruitById (@Path("id") String id);
+    @POST("add-order")
+    Call<Response<Order>> order (@Body Order order);
 
 
 }
